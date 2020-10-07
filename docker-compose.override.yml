@@ -2,6 +2,8 @@ version: '3.4'
 
 services:
   identityserver:
+    depends_on:
+      - db
     ports:
       - 80
       - 443
@@ -11,4 +13,12 @@ services:
       - ASPNETCORE_Kestrel__Certificates__Default__Password=buckman_1_ABC
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/dev_cert.pfx
     volumes:
-      - ./conf.d/https/:/https/
+      - ./conf.d/https/:/https/     
+  db:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: "SqlServer2019" 
+    ports:
+      - '1433:1433'
+      
