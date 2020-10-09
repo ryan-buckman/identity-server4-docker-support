@@ -28,3 +28,7 @@ To run the application over SSL there are a few steps we need to do. In your app
 ##  Container Orchestrator Support
 
 The solution also includes the added container orchestration support files. Fore more information see [Container Tools in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/containers/overview?view=vs-2019)
+
+
+## Issues
+For issues, use the [identity-server4-docker-support issue tracker](https://github.com/ryan-buckman/identity-server4-docker-support/issues).
