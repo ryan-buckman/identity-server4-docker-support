@@ -1,4 +1,4 @@
-﻿# identity-server4-docker-support
+﻿# Docker and IdentityServer4 over ssl
 This project demonstrates how to use Docker to setup and run a simple IdentityServer4 application over ssl.
 The project uses the Identity Server 4 Quickstart UI and replaces the in-memory clients with an Entity Framework backing store using SQL Server.
 
